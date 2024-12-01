@@ -146,13 +146,13 @@ const projects = [
       },
     ],
     image: proshop,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/MinMyatPaing/ProShop",
   },
   {
-    name: "Job IT",
+    name: "The GrillSmith",
     category: "web",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A restaurant management website where users can authenticate and book tables in advance. Featuring admin functionalties, provided with correct credentials.",
     tags: [
       {
         name: "react",
@@ -167,11 +167,12 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: grillsmith,
+    source_code_link: "https://github.com/nyitrai100/Restaurantwebsite",
   },
   {
-    name: "Trip Guide",
+    name: "minestate",
+    category: "web",
     description:
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     tags: [
@@ -189,7 +190,73 @@ const projects = [
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/MinMyatPaing/react-estate",
+  },
+  {
+    name: "Pet Adopt App",
+    category: "mobile",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide,
+    source_code_link: "https://github.com/MinMyatPaing/pet-adopt-app",
+  },
+  {
+    name: "Plamories",
+    category: "mobile",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide,
+    source_code_link: "https://github.com/MinMyatPaing/plamories",
+  },
+  {
+    name: "Emotion Scanner",
+    category: "ML",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide,
+    source_code_link: "https://github.com/MinMyatPaing/Facial_Recog_Minigame",
   },
 ];
 
