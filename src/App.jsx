@@ -1,9 +1,16 @@
-import './App.css'
+import { BrowserRouter } from "react-router-dom";
+
+import Navbar from "./sections/Navbar";
 
 function App() {
   return (
-    <div>Hello</div>
-  )
+    <BrowserRouter>
+      <Navbar />
+
+      <div className="h-screen"></div>
+      <div className="h-screen"></div>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

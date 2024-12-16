@@ -75,6 +75,55 @@ export const slideIn = (direction, type, delay, duration) => {
   };
 };
 
+// Navbar animations
+export const fullScreenMenuVariants = {
+  initial: {
+    scale: 0,
+    borderRadius: "100%",
+    opacity: 0,
+  },
+  animate: {
+    scale: 1,
+    borderRadius: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.4,
+      ease: [0.645, 0.045, 0.355, 1.0],
+    },
+  },
+  exit: {
+    scale: 0,
+    borderRadius: "100%",
+    opacity: 0,
+    transition: {
+      duration: 0.4,
+      ease: [0.645, 0.045, 0.355, 1.0],
+    },
+  },
+};
+
+export const menuItemVariants = {
+  initial: { y: 20, opacity: 0 },
+  animate: (i) => ({
+    y: 0,
+    opacity: 1,
+    transition: {
+      delay: i * 0.1,
+      duration: 0.4,
+      ease: "easeOut",
+    },
+  }),
+  exit: (i) => ({
+    y: 20,
+    opacity: 0,
+    transition: {
+      delay: i * 0.1,
+      duration: 0.3,
+      ease: "easeIn",
+    },
+  }),
+};
+
 export const staggerContainer = (staggerChildren, delayChildren) => {
   return {
     hidden: {},

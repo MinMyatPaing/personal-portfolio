@@ -30,6 +30,10 @@ export const navLinks = [
     title: "About",
   },
   {
+    id: "experience",
+    title: "Experience",
+  },
+  {
     id: "projects",
     title: "Projects",
   },
@@ -142,7 +146,11 @@ const projects = [
       },
       {
         name: "tailwind",
-        color: "pink-text-gradient",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "green-text-gradient",
       },
     ],
     image: proshop,
@@ -155,16 +163,16 @@ const projects = [
       "A restaurant management website where users can authenticate and book tables in advance. Featuring admin functionalties, provided with correct credentials.",
     tags: [
       {
-        name: "react",
+        name: "php",
+        color: "purple-text-gradient",
+      },
+      {
+        name: "tailwind",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
+        name: "SQL",
+        color: "orange-text-gradient",
       },
     ],
     image: grillsmith,
@@ -178,86 +186,78 @@ const projects = [
     tags: [
       {
         name: "nextjs",
-        color: "blue-text-gradient",
+        color: "white",
       },
       {
-        name: "supabase",
+        name: "mongodb",
         color: "green-text-gradient",
       },
       {
-        name: "css",
-        color: "pink-text-gradient",
+        name: "nodejs",
+        color: "green-text-gradient",
       },
     ],
-    image: tripguide,
+    image: minestate,
     source_code_link: "https://github.com/MinMyatPaing/react-estate",
   },
   {
     name: "Pet Adopt App",
     category: "mobile",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "An app that lets users adopt pets and connect directly with sellers for seamless communication.",
     tags: [
       {
-        name: "nextjs",
+        name: "react-native",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
-        color: "green-text-gradient",
+        name: "clerk",
+        color: "white",
       },
       {
-        name: "css",
-        color: "pink-text-gradient",
+        name: "firebase",
+        color: "orange-text-gradient",
       },
     ],
-    image: tripguide,
+    image: petadopt,
     source_code_link: "https://github.com/MinMyatPaing/pet-adopt-app",
   },
   {
     name: "Plamories",
     category: "mobile",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "An app that lets users save their favorite places with locations and photos for easy access and memories.",
     tags: [
       {
-        name: "nextjs",
+        name: "react-native",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
+        name: "firebase",
+        color: "orange-text-gradient",
       },
     ],
-    image: tripguide,
+    image: plamories,
     source_code_link: "https://github.com/MinMyatPaing/plamories",
   },
   {
     name: "Emotion Scanner",
     category: "ML",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A Python-based emotion scanner that analyzes facial expressions to determine and display emotions",
     tags: [
       {
-        name: "nextjs",
-        color: "blue-text-gradient",
+        name: "tensorflow",
+        color: "orange-text-gradient",
       },
       {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
+        name: "python",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: emotionscanner,
     source_code_link: "https://github.com/MinMyatPaing/Facial_Recog_Minigame",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };
