@@ -1,3 +1,5 @@
+import { FaCode, FaMobileAlt, FaRobot } from "react-icons/fa";
+
 import {
   mobile,
   creator,
@@ -43,18 +45,24 @@ export const navLinks = [
   },
 ];
 
-const services = [
+const skills = [
   {
     title: "Full Stack Web Developer",
-    icon: web,
+    description:
+      "Proficient in building scalable and responsive web applications, specializing in React, Next.js, and Node.js frameworks for seamless frontend and backend integration.",
+    icon: FaCode,
   },
   {
     title: "React Native Developer",
-    icon: mobile,
+    description:
+      "Skilled in developing high-performance cross-platform mobile applications for iOS and Android using the React Native framework, ensuring optimal user experience.",
+    icon: FaMobileAlt,
   },
   {
     title: "ML Developer",
-    icon: creator,
+    description:
+      "Passionate about designing and implementing AI and machine learning solutions, leveraging frameworks like TensorFlow and Scikit-learn for data-driven results.",
+    icon: FaRobot,
   },
 ];
 
@@ -260,4 +268,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, projects };
+export { skills, technologies, experiences, projects };

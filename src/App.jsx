@@ -2,15 +2,18 @@ import { BrowserRouter } from "react-router-dom";
 
 import Navbar from "./sections/Navbar";
 import Hero from "./sections/Hero";
+import About from "./sections/About";
 
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
+      <div className="relative z-0 bg-backcolor">
+        <Navbar />
 
-      <Hero />
+        <Hero />
 
-      <div className="h-screen bg-backcolor" />
+        <About />
+      </div>
     </BrowserRouter>
   );
 }

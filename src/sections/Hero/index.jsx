@@ -61,34 +61,32 @@ export default function Hero() {
       {/* Overlay */}
       <div className="absolute inset-0 bg-backcolor/90" />
       <div className={`${styles.padding} max-w-7xl relative z-10 flex gap-7`}>
-        {/* Animated Purple Ball */}
+        {/* Animated Purple Ball and Line */}
         <div className="flex flex-col justify-center items-center relative">
+          {/* Ball Animation */}
           <motion.div
-            initial={{ y: -80, opacity: 1 }}
-            animate={{ y: 180, opacity: 1 }}
-            transition={{ duration: 1 }}
+            initial={{ y: -50 }}
+            animate={{ y: "calc(100% - 10px)" }} // Stop dynamically at end of line
+            transition={{ duration: 2, ease: "easeInOut" }}
             className="w-5 h-5 rounded-full bg-primary"
           />
 
-          <motion.div
-            initial={{ height: -80, opacity: 1 }}
-            animate={{ height: "440px", opacity: 1 }}
-            transition={{ duration: 1 }}
-            className="absolute -top-32 w-1"
+          {/* Line Trail */}
+          <div
+            className="absolute top-0 w-1 bg-gradient-to-b from-[#6d1ddb] to-transparent"
             style={{
-              background:
-                "linear-gradient(to top, rgba(109, 29, 219, 1), rgba(109, 29, 219, 0))",
+              height: "calc(100% + 100px)", // Line taller than content
             }}
           />
         </div>
 
         {/* Main Header & Subheader */}
-        <div className="flex flex-col justify-center gap-6">
+        <div className="flex flex-col justify-center sm:gap-2 gap-6">
           <motion.h1
             variants={headerVariants}
             initial="hidden"
             animate="visible"
-            className={`font-black font-playfair text-white lg:text-[110px] sm:text-[65px] xs:text-[50px] text-[40px] lg:leading-[98px] mb-10`}
+            className={`font-black font-playfair text-white lg:text-[110px] sm:text-[75px] xs:text-[60px] text-[48px] lg:leading-[98px] lg:mb-10 sm:mb-6 xs:mb-4`}
           >
             Min Paing
           </motion.h1>
@@ -115,7 +113,7 @@ export default function Hero() {
                 delay: 1,
               },
             }}
-            className="mx-auto bg-transparent flex gap-2 items-center text-[20px] font-bold"
+            className="mx-auto bg-transparent flex gap-2 items-center text-[20px] font-bold mt-3"
           >
             Let&apos;s Connect{" "}
             <motion.span
