@@ -11,7 +11,7 @@ export default {
         backcolor: "#0B0C10",
       },
       fontFamily: {
-        playfair: ["Play Fair", "sans-serif"],
+        playfair: ["Playfair Display", "sans-serif"],
         inter: ["Inter", "sans-serif"],
       },
       screens: {

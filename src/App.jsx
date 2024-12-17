@@ -1,14 +1,16 @@
 import { BrowserRouter } from "react-router-dom";
 
 import Navbar from "./sections/Navbar";
+import Hero from "./sections/Hero";
 
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
 
-      <div className="h-screen"></div>
-      <div className="h-screen"></div>
+      <Hero />
+
+      <div className="h-screen bg-backcolor" />
     </BrowserRouter>
   );
 }
