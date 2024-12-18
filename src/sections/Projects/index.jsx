@@ -46,11 +46,11 @@ const Projects = () => {
           .map((project, index) => (
             <motion.div
               key={project.name}
-              variants={fadeIn("up", "spring", 0.5 * index, 0.75)}
+              variants={fadeIn("up", "spring", 0.5 * index, 0.5)}
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className="w-full sm:w-[360px] p-4 bg-gray-900 rounded-2xl shadow-lg hover:scale-[1.02] transition-transform"
+              className="w-full sm:w-[360px] p-4 bg-tertiary rounded-2xl shadow-lg hover:scale-[1.02] transition-transform"
             >
               {/* Project Image */}
               <div className="relative rounded-t-xl overflow-hidden">
@@ -75,16 +75,18 @@ const Projects = () => {
               </div>
 
               {/* Project Details */}
-              <div className="p-5">
-                <h3 className="text-[20px] font-bold text-white">
-                  {project.name}
-                </h3>
-                <p className="mt-2 text-[14px] text-gray-400">
-                  {project.description}
-                </p>
+              <div className="p-5 flex flex-col justify-between gap-5">
+                <div>
+                  <h3 className="text-[20px] font-bold text-white">
+                    {project.name}
+                  </h3>
+                  <p className="mt-2 text-[14px] text-gray-400">
+                    {project.description}
+                  </p>
+                </div>
 
                 {/* Tags */}
-                <div className="mt-3 flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag) => (
                     <span
                       key={tag.name}
