@@ -1,9 +1,14 @@
-import { FaCode, FaMobileAlt, FaRobot } from "react-icons/fa";
+import {
+  FaCode,
+  FaMobileAlt,
+  FaRobot,
+  FaInstagram,
+  FaLinkedin,
+  FaFacebook,
+  FaGithub,
+} from "react-icons/fa";
 
 import {
-  mobile,
-  creator,
-  web,
   javascript,
   typescript,
   html,
@@ -126,7 +131,6 @@ const experiences = [
     title: "AI Research Assistant",
     company_name: "University of Huddersfield",
     icon: huddersfield,
-    iconBg: "#383E56",
     date: "July 2024 - Current",
     points: [
       "Assisting in the development and deployment of AI-driven applications, including integrating custom machine learning models and optimizing solutions for real-world user needs.",
@@ -268,4 +272,27 @@ const projects = [
   },
 ];
 
-export { skills, technologies, experiences, projects };
+const socialLinks = [
+  {
+    name: "Github",
+    link: "https://github.com/MinMyatPaing",
+    icon: FaGithub,
+  },
+  {
+    name: "linkedIn",
+    link: "https://www.linkedin.com/in/min-myat-paing-70566319a/",
+    icon: FaLinkedin,
+  },
+  {
+    name: "instagram",
+    link: "https://www.instagram.com/min_myat_paing08/",
+    icon: FaInstagram,
+  },
+  {
+    name: "facebook",
+    link: "https://www.facebook.com/min.m.paing.31/?locale=en_GB",
+    icon: FaFacebook,
+  },
+];
+
+export { skills, socialLinks, technologies, experiences, projects };

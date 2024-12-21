@@ -41,19 +41,18 @@ const Contact = () => {
           to_name: "Min Paing",
           from_email: form.email,
           to_email: "minmyatpaing64@gmail.com",
-          message: form.message,
+          message: `Email: ${form.email} \n\nMessage: ${form.message}`,
         },
         { publicKey: import.meta.env.VITE_PUBLIC_KEY }
       )
       .then(() => {
         setLoading(false);
-        alert(
-          "Thank you. I will be in touch with you as early as possible."
-        ).setForm({
+        setForm({
           name: "",
           email: "",
           message: "",
         });
+        alert("Thank you. I will be in touch with you as early as possible.");
       })
       .catch((error) => {
         setLoading(false);
