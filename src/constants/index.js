@@ -17,7 +17,7 @@ import {
   figma,
   docker,
   huddersfield,
-  grillsmith,
+  zentry,
   plamories,
   petadopt,
   minestate,
@@ -165,26 +165,26 @@ const projects = [
     source_code_link: "https://github.com/MinMyatPaing/ProShop",
   },
   {
-    name: "The GrillSmith",
+    name: "Zentry Clone",
     category: "web",
     description:
-      "A restaurant management website where users can authenticate and book tables in advance. Featuring admin functionalties, provided with correct credentials.",
+      "Experience the ultimate gaming hub! Packed with sleek visuals, dynamic animations, and intuitive navigation, this website is your gateway to the latest gaming news, reviews, and community events. Designed for gamers, by gamers – where style meets functionality!",
     tags: [
-      {
-        name: "php",
-        color: "purple-text-gradient",
-      },
       {
         name: "tailwind",
         color: "blue-text-gradient",
       },
       {
-        name: "SQL",
-        color: "orange-text-gradient",
+        name: "gsap",
+        color: "green-text-gradient",
+      },
+      {
+        name: "react",
+        color: "blue-text-gradient",
       },
     ],
-    image: grillsmith,
-    source_code_link: "https://github.com/nyitrai100/Restaurantwebsite",
+    image: zentry,
+    source_code_link: "https://github.com/MinMyatPaing/zentry-clone",
   },
   {
     name: "Min Estate",
