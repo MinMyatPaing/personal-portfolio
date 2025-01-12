@@ -176,8 +176,8 @@ const Navbar = () => {
                       active === link.title ? "text-white" : "text-secondary"
                     } hover:text-white text-[22px] font-medium cursor-pointer`}
                     onClick={() => {
-                      setIsMenuOpen(false);
                       setActive(link.title);
+                      setIsMenuOpen(false);
                     }}
                   >
                     <a href={`#${link.id}`}>{link.title}</a>
