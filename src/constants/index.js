@@ -25,7 +25,7 @@ import {
   zentry,
   plamories,
   petadopt,
-  minestate,
+  bookwise,
   emotionscanner,
   proshop,
   threejs,
@@ -191,26 +191,26 @@ const projects = [
     source_code_link: "https://github.com/MinMyatPaing/zentry-clone",
   },
   {
-    name: "Min Estate",
+    name: "BookWise",
     category: "web",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "BookWise is a library booking website that lets users browse, reserve, and manage book loans with secure sign-in and sign-out features. It also includes admin tools for managing inventory, reservations, and user accounts efficiently.",
     tags: [
       {
         name: "nextjs",
         color: "white",
       },
       {
-        name: "mongodb",
+        name: "neon",
         color: "green-text-gradient",
       },
       {
-        name: "nodejs",
-        color: "green-text-gradient",
+        name: "postgresql",
+        color: "blue-text-gradient",
       },
     ],
-    image: minestate,
-    source_code_link: "https://github.com/MinMyatPaing/react-estate",
+    image: bookwise,
+    source_code_link: "https://github.com/MinMyatPaing/university-library",
   },
   {
     name: "Pet Adopt App",

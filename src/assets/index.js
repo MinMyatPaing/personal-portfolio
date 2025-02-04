@@ -23,7 +23,7 @@ import threejs from "./tech/threejs.svg";
 import huddersfield from "./company/huddersfield.png";
 
 import zentry from "./projects/zentry-clone.png";
-import minestate from "./projects/minestate.jpeg";
+import bookwise from "./projects/bookwise.png";
 import proshop from "./projects/proshop.png";
 import emotionscanner from "./projects/emotionscanner.jpeg";
 import petadopt from "./projects/petadopt.png";
@@ -53,7 +53,7 @@ export {
   huddersfield,
   emotionscanner,
   zentry,
-  minestate,
+  bookwise,
   petadopt,
   plamories,
   proshop,

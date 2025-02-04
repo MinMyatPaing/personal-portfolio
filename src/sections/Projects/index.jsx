@@ -5,7 +5,7 @@ import Wrapper from "../../hoc";
 import { textVariant, fadeIn } from "../../utils/motion";
 import { styles } from "../../styles";
 import { projects } from "../../constants";
-import { github } from "../../assets";
+import ProjectCard from "./components/ProjectCard";
 
 const Projects = () => {
   const categories = ["web", "mobile", "ML"];
@@ -44,60 +44,12 @@ const Projects = () => {
         {projects
           .filter((project) => project.category === selectedCategory)
           .map((project, index) => (
-            <motion.div
+            <ProjectCard
               key={project.name}
-              variants={fadeIn("up", "spring", 0.5 * index, 0.5)}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true }}
-              className="w-full sm:w-[360px] p-4 bg-tertiary rounded-2xl shadow-lg hover:scale-[1.02] transition-transform"
-            >
-              {/* Project Image */}
-              <div className="relative rounded-t-xl overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.name}
-                  className="w-full h-[200px] object-cover"
-                />
-                {/* GitHub Icon */}
-                <a
-                  href={project.source_code_link}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="absolute top-3 right-3 w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center shadow-md hover:bg-primary transition-all"
-                >
-                  <img
-                    src={github}
-                    alt="GitHub"
-                    className="w-6 h-6 object-contain"
-                  />
-                </a>
-              </div>
-
-              {/* Project Details */}
-              <div className="p-5 flex flex-col justify-between gap-5">
-                <div>
-                  <h3 className="text-[20px] font-bold text-white">
-                    {project.name}
-                  </h3>
-                  <p className="mt-2 text-[14px] text-gray-400">
-                    {project.description}
-                  </p>
-                </div>
-
-                {/* Tags */}
-                <div className="flex flex-wrap gap-2">
-                  {project.tags.map((tag) => (
-                    <span
-                      key={tag.name}
-                      className={`text-sm font-medium ${tag.color}`}
-                    >
-                      #{tag.name}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </motion.div>
+              project={project}
+              index={index}
+              fadeIn={fadeIn}
+            />
           ))}
       </div>
     </>
